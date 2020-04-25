@@ -1,0 +1,91 @@
+#myCanvas{
+    width: 50vw;
+    height: 30vh;
+}
+
+.canvasContainer{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.appName{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField{
+    display: flex;
+    margin: 5%;
+}
+
+input[type=number]
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sideText{
+    font-size: 1em;
+    margin-right: 2px;
+}
+
+.output{
+    text-align: center;
+}
+
+/* for mobile version */
+@media screen and (max-width: 600px) {
+
+    #myCanvas{
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    #checkButton{
+        height: 5em;
+        width: 10em;
+    }
+
+    .inputBox{
+        flex-direction: row;
+    }
+
+    .inputField{
+        width: 40vw;
+    }
+
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+        width: 50vw ;
+    }
+
+    .buttonContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40vw;
+    }
+}

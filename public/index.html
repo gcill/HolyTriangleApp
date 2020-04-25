@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="triangle.css">
+        <script src="trianglepic.js"></script>
+    </head>
+    <body>
+        <div class="appName">Type of Triangle</div>
+        <div class ="container">
+
+            <div class="canvasContainer">
+                <canvas id="myCanvas"></canvas>
+            </div>
+
+            <p class = "output" id = "output"></p>
+            
+            <div class="inputBox">
+                <div class = "inputContainer">
+                    <div class = "inputField">
+                        <div class="sideText">1. </div>
+                        <input class="Input"  id="InA" type="number" min="0"  required>
+                    </div>
+                    <div class = "inputField">
+                        <div class="sideText">2. </div>
+                        <input class="Input"  id="InB" type="number" min="0"  required>
+                    </div>
+                    <div class = "inputField">
+                        <div class="sideText">3. </div>
+                        <input class="Input"  id="InC" type="number" min="0"  required>
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    <input id="checkButton" type="button" value="Check" onclick="checktriangle()">
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
