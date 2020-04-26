@@ -129,12 +129,12 @@ input[type=number]
     }
 
     #checkButton{
-        height: 5em;
-        width: 10em;
+        height: 3em;
+        width: 8em;
     }
     #checkButton:active{
-        height: 5em;
-        width: 10em;
+        height: 3em;
+        width: 8em;
         background-color: greenyellow;
     }
     .inputBox{
