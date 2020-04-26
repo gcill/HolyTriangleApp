@@ -20,9 +20,13 @@ function checktriangle(){
     if(a == null||b == null|| c== null){
         alert("Values shouldn't be 0 or Null")
         output.innerHTML = "Result : Missing Input"
+        type = 6;
+        drawTriangle(type)
     }
     else if(a<0||b<0||c<0){
         output.innerHTML = "Result : Wrong Input"
+        type = 6;
+        drawTriangle(type)
     }
     else if(a+b>c && a+c>b && b+c>a){
         
