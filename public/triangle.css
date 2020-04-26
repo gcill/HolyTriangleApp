@@ -1,64 +1,129 @@
+.box{
+    background-color: aquamarine;
+    margin-top: 120px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 #myCanvas{
-    width: 50vw;
-    height: 30vh;
+    width: 500px;
+    height: 500px;
+    margin-left: 20%;
+    margin-right: 10px;
 }
 
 .canvasContainer{
-    width: 100%;
-    text-align: center;
+    width: 70%;
     margin-top: 5%;
+    margin-left: 10%;
 }
 
 .appName{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 100%;
+    padding-top: 5%;
 }
 
 .container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+
+    
 }
 
 .inputContainer{
     display: flex;
     flex-direction: column;
+    
 }
 
 .inputBox{
+    margin-top: 10%;
+    margin-left: 20%;
     display: flex;
     flex-direction: column;
+
 }
 
 .inputField{
     display: flex;
-    margin: 5%;
+    margin: 2%; 
 }
 
 input[type=number]
 {
   -webkit-appearance: none;
   margin: 0;
+  border: 0;
+  height: 40px;
+  width: 350px;
+  font-size: 2em;
 }
-
+#checkButton{
+    margin-top: 10px;
+    height: 50px;
+    width: 400px;
+    border: 0;
+    font-size: 20px;
+}
+#checkButton:active{
+    margin-top: 10px;
+    height: 50px;
+    width: 400px;
+    border: 0;
+    font-size: 20px;
+    background-color: greenyellow;
+}
 .sideText{
-    font-size: 1em;
-    margin-right: 2px;
+    font-size: 2em;
+    margin-right: 20px;
+
 }
 
 .output{
-    text-align: center;
+    width: 100%;
+    margin: 10%;
+    margin-left: 20%;
+    margin-top: 0;
+    padding: 2%;
+    font-size: 1.75rem;
+}
+.buttonContainer{
+    display: flex;
+  /*  justify-content: center;
+    align-items: center; */
+    margin-left: 10px;
+    width: 40vw;
+    
 }
 
 /* for mobile version */
 @media screen and (max-width: 600px) {
+    .box{
+        background-color: aquamarine;
+      margin: 0;
+    }
+    input[type=number]
+    {
+      -webkit-appearance: none;
+      margin: 0;
+      border: 0;
+      height: 40px;
+      
+      font-size: 1em;
+    }
 
     #myCanvas{
+        margin: 0;
         width: 80vw;
         height: 50vh;
     }
 
+    .canvasContainer{
+        width: 100%;
+        margin-top: 5%;
+    }
     .container{
         flex-direction: column;
     }
@@ -67,8 +132,14 @@ input[type=number]
         height: 5em;
         width: 10em;
     }
-
+    #checkButton:active{
+        height: 5em;
+        width: 10em;
+        background-color: greenyellow;
+    }
     .inputBox{
+        margin-left: 5%;
+        margin-bottom: 20px;
         flex-direction: row;
     }
 
@@ -87,5 +158,16 @@ input[type=number]
         justify-content: center;
         align-items: center;
         width: 40vw;
+    }
+    .output{
+        margin-left: 7%;
+        
+    }
+    .sideText{
+        font-size: 1em;
+        margin:5px;
+        margin-right: 10px;
+        padding-top: 5px;
+    
     }
 }
