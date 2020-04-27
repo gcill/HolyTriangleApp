@@ -12,6 +12,7 @@ body{
     width: 450px;
     height: 450px;
     margin: 0 auto;
+    background-color: #65f0c1;
 }
 
 .canvasContainer{
@@ -35,6 +36,10 @@ body{
     justify-content: center;
 
     
+}
+
+.describeText{
+    font-size: 20px;
 }
 
 .inputContainer{
@@ -191,5 +196,8 @@ input[type=number]{
 @media screen and (min-width: 850px) {
     .inputBox{
         width: 40%;
+    }
+    .appName{
+        margin-bottom: 10px;
     }
 }
