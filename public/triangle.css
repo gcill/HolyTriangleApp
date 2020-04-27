@@ -47,8 +47,6 @@ body{
     padding-top: 10%;
     display: flex;
     flex-direction: column;
-    width: 40%;
-
 }
 
 .inputField{
@@ -110,8 +108,8 @@ input[type=number]{
 /* for mobile version */
 @media screen and (max-width: 600px) {
     .box{
-        background-color: aquamarine;
-      margin: 0;
+      background-color: aquamarine;
+      margin: 0 auto;
     }
     input[type=number]
     {
@@ -175,7 +173,7 @@ input[type=number]{
         margin: 0px;
     }
     .output{
-        margin: 0 0 0 7%;
+        margin: 0 0 7% 7%;
         width: 100%;
         padding: 0;
     }
@@ -187,5 +185,11 @@ input[type=number]{
     }
     input[type=number]{
         width: 40vw;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .inputBox{
+        width: 40%;
     }
 }
