@@ -17,13 +17,15 @@ function checktriangle(){
     console.log(b)
     console.log(c)
 
-    if(a == null||b == null|| c== null){
-        alert("Values shouldn't be 0 or Null")
+    //check if input is number
+    if(isNaN(a) || isNaN(b) || isNaN(c)){
+        alert("Please provide side of triangle")
         output.innerHTML = "Result : Missing Input"
         type = 6;
         drawTriangle(type)
     }
     else if(a<0||b<0||c<0){
+        alert("Value should not negative")
         output.innerHTML = "Result : Wrong Input"
         type = 6;
         drawTriangle(type)
@@ -43,7 +45,6 @@ function checktriangle(){
             type = 3
         }
         else {
-
             w = (Math.pow(b,2)+Math.pow(c,2)-Math.pow(a,2))/(2*b*c)
             x = Math.acos((Math.pow(b,2)+Math.pow(c,2)-Math.pow(a,2))/(2*b*c))*180/Math.PI
             y = Math.acos((Math.pow(a,2)+Math.pow(c,2)-Math.pow(b,2))/(2*a*c))*180/Math.PI
@@ -62,13 +63,12 @@ function checktriangle(){
                     type = 5
 
                 }
-            
         }
         drawTriangle(type)
         //drawTriangleFromSide();
     }
     else{
-        alert("Values shouldn't be 0 or Null")
+        //alert("Values shouldn't be 0 or Null")
         output.innerHTML = "Result : Not a triangle"
         type = 6
         drawTriangle(type)

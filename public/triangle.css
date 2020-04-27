@@ -1,20 +1,25 @@
+body{
+    font-family:'Roboto', sans-serif;
+}
 .box{
     background-color: aquamarine;
     margin-top: 120px;
     margin-left: 10%;
     margin-right: 10%;
+    height: 98vh;
 }
 #myCanvas{
-    width: 500px;
-    height: 500px;
-    margin-left: 20%;
-    margin-right: 10px;
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
 }
 
 .canvasContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 70%;
-    margin-top: 5%;
-    margin-left: 10%;
+    
 }
 
 .appName{
@@ -39,10 +44,10 @@
 }
 
 .inputBox{
-    margin-top: 10%;
-    margin-left: 20%;
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
+    width: 40%;
 
 }
 
@@ -65,7 +70,8 @@ input[type=number]
     height: 50px;
     width: 400px;
     border: 0;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 600;
 }
 #checkButton:active{
     margin-top: 10px;
@@ -83,8 +89,7 @@ input[type=number]
 
 .output{
     width: 100%;
-    margin: 10%;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-top: 0;
     padding: 2%;
     font-size: 1.75rem;
@@ -96,6 +101,10 @@ input[type=number]
     margin-left: 10px;
     width: 40vw;
     
+}
+
+input[type=number]{
+    text-align: center;
 }
 
 /* for mobile version */
@@ -115,22 +124,26 @@ input[type=number]
     }
 
     #myCanvas{
-        margin: 0;
+        margin: 0 auto 2% auto;
         width: 80vw;
-        height: 50vh;
+        height: 80vw;
     }
 
     .canvasContainer{
         width: 100%;
         margin-top: 5%;
+        margin-left: 0;
     }
     .container{
         flex-direction: column;
     }
 
     #checkButton{
-        height: 3em;
+        height: 4em;
         width: 6em;
+        margin: 0;
+        font-size: 25px;
+        background-color: #00d64f;
     }
     #checkButton:active{
         height: 3em;
@@ -138,9 +151,10 @@ input[type=number]
         background-color: greenyellow;
     }
     .inputBox{
-        margin-left: 5%;
+        margin-left: 0%;
         margin-bottom: 20px;
         flex-direction: row;
+        padding: 0;
     }
 
     .inputField{
@@ -157,17 +171,21 @@ input[type=number]
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40vw;
+        width: 45vw;
+        margin: 0px;
     }
     .output{
-        margin-left: 7%;
-        
+        margin: 0 0 0 7%;
+        width: 100%;
+        padding: 0;
     }
     .sideText{
         font-size: 1em;
         margin:5px;
         margin-right: 10px;
         padding-top: 5px;
-    
+    }
+    input[type=number]{
+        width: 40vw;
     }
 }
